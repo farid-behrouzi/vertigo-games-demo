@@ -7,7 +7,6 @@ public class GridSystem : Helper
 {
     public static GridSystem instance = null;
 
-    public Material newMaterial;
 
     //Text objects for ui purposes
     public Text pointText;
@@ -423,7 +422,7 @@ public class GridSystem : Helper
             Destroy(hex.gameObject);
         }
 
-        point += 15;
+        point += 5;
         pointText.text = "Points: " + point;
         moveText.text = "#Moves: " + move;
         exploding = false;
